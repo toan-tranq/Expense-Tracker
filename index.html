@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">Expense Tracker</h1>
+            <div class="balance">
+                <p class="balance-label">Total Balance</p>
+                <p class="balance-amount">$0.00</p>
+            </div>
+        </header>
+
+        <!-- Summary Box -->
+        <section class="summary">
+            <div class="summary-item income">
+                <h3 class="summary-label">Income</h3>
+                <p class="summary-amount income-amount">$0.00</p>
+            </div>
+            <div class="summary-item expense">
+                <h3 class="summary-label">Expense</h3>
+                <p class="summary-amount expense-amount">$0.00</p>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section class="history">
+            <div class="history-header">
+                <h2 class="section-title">History</h2>
+                <button class="clear-all-btn" onclick="clearAllTransactions()">Clear All</button>
+            </div>
+            <div class="history-list">
+                <div class="history-item">
+                    <span class="history-text">No transactions yet</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form -->
+        <section class="form-section">
+            <h2 class="section-title">Add New Transaction</h2>
+            <form class="transaction-form" id="transactionForm">
+                <div class="form-group">
+                    <label for="text">Text</label>
+                    <input type="text" id="text" name="text" placeholder="Enter transaction name" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Positive for income, negative for expense" step="0.01" required>
+                    <small class="form-hint">(negative - expense, positive - income)</small>
+                </div>
+                <button type="submit" class="submit-btn">Add Transaction</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
