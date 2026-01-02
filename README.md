@@ -23,7 +23,8 @@ You can view the live version of the app here: [https://toan-tranq.github.io/Exp
 | Desktop View | Mobile View |
 |--------------|-------------|
 | <img width="3017" height="1582" alt="image" src="https://github.com/user-attachments/assets/3ae99463-8b6c-4f38-ab35-1ee96e07309f" />
-|
+|<img width="996" height="1575" alt="image" src="https://github.com/user-attachments/assets/51bc4e2a-5775-4e1c-941e-cb17835b6c60" />
+
 
 ## 📖 What I Learned
 Through this project, I strengthened my understanding of:
